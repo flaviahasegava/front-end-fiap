@@ -3,9 +3,110 @@ div {
     font-size: 32px;
 }
 
+/* DINÂMICAS
+ESTRUTURAIS
+VALIDAÇÕES */
 
-// Pseudo-classe : / Pseudo-elemento ::
-// Passar o mouse por cima
+/* PSEUDO-CLASSES ESTRUTURAIS */
+/* Pseudo-classe : / Pseudo-elemento :: */
+
+/* Passar o mouse por cima */
 div:hover {
     color: red;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Link ativo */
+a:active {
+    color: red;
+}
+
+/* Link visitado */
+a:visited {
+    color: green;
+}
+
+/* Enquanto input estiver em focus ele pode fazer algo específico - Clicar dentro do input muda a cor de fundo (background-color) do input e o color muda a letra dentro do input */
+input:focus {
+    background-color: yellow;
+    color: red;
+}
+
+u {
+    text-decoration: none;
+}
+
+li:first-child {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+li:last-child {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+}
+/* Função ou método - É possível colocar o argumento */
+/* odd -> filhos impares / even -> filhos pares / 2n + 2 (seleciona um filho e depois o intervalo deles - 2 seleciona o filho 2) */
+li:nth-child(even) {
+    color: pink;
+}
+
+/* Classe ou ID todos os filhos personalizados. Exceto o que está dentro de () */
+li:not(.esseNao) {
+    color: purple;
+}
+
+/* PSEUDO-CLASSES DE VALIDAÇÕES */
+/* Não necessariamente depende de um seletor, pode ser global */
+
+/* Pseudo-classe Global */
+:checked {
+    margin-left: 20px;
+}
+
+/* Afeta especificamente apenas do tipo checkbox (serve para inputs específicos */
+input[type='checkbox']:checked{
+    margin-left: 40px;
+}
+
+option:checked {
+    color: red;
+}
+
+/* PSEUDO-ELEMENTOS */
+/* Pega uma parte de um elemento */
+
+/* Primeira letra do parágrafo */
+p::first-letter {
+    /* Capitular */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 42px;
+    color: lightskyblue;
+    float: left;
+    margin-right: 12px;
+    line-height: 1;
+}
+
+/* Primeira linha do parágrafo */
+p::first-line {
+    color: blue;
+}
+
+/* Selecionar o parágrafo */
+p::selection {
+    background-color: yellow;
+    color: red;
+}
+
+/* Pseudo-elemento de forma global - Marcadores da lista ficam com a cor verde */
+::marker {
+    color: green;
+}
+
+::placeholder {
+    color: blue;
 }
