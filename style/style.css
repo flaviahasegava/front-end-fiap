@@ -1,0 +1,11 @@
+div {
+    color: orange;
+    font-size: 32px;
+}
+
+
+// Pseudo-classe : / Pseudo-elemento ::
+// Passar o mouse por cima
+div:hover {
+    color: red;
+}
