@@ -1,0 +1,77 @@
+.caixa-cinza {
+    background-color: #ccc;
+    height: 200px;
+    /* width: 200px; */
+    display: flex;
+    /* flex-direction: row; - padrão */
+    /* flex-direction: row-reverse;  */
+    flex-direction: row;
+}
+
+.caixa-direction {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 10px;
+    position: relative;
+}
+
+.numero {
+    font-size: 150%;
+    color: rgb(250, 192, 0);
+    font-weight: bold;
+}
+
+.circulo {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(189, 186, 186);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-branca {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #eeff00;
+    padding: 20px;
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row wrap;
+}
+
+.caixa-wrap {
+    width: 100px;
+    height: 100px;
+    background-color: #ff7b00;
+    color: #fff;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-azul {
+    display: flex;
+    background-color: #287bf7;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.caixa-justify {
+    width: 100px;
+    height: 100px;
+    background-color: #fab778;
+    margin: 5px;
+    border-radius: 10px;
+}
